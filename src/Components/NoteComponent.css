@@ -1,0 +1,247 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap");
+body {
+  font-family: "Roboto", sans-serif;
+}
+.main {
+  flex: 1;
+}
+.note-item {
+  margin: 30px;
+  display: flex;
+  gap: 30px;
+}
+.timestamp p {
+  color: #353535;
+  font-family: Roboto;
+  font-size: 15.5px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 97.688%;
+  letter-spacing: 0.373px;
+}
+.notestamp p {
+  max-width: 680px;
+  word-wrap: break-word;
+  color: #000;
+  font-family: Roboto;
+  font-size: 15px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 160.188%;
+  letter-spacing: 0.63px;
+}
+.navbar {
+  display: flex;
+  align-items: center;
+  height: 50px;
+  width: 100%;
+  position: fixed;
+  margin-top: -50px;
+  background: #e8e8e8;
+}
+.cur-group {
+  color: #000;
+  font-family: Roboto;
+  font-size: 22px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+  letter-spacing: 0.48px;
+}
+.notes-display {
+  margin-top: 50px;
+  margin-bottom: 80px;
+  background: #f7ecdc;
+  height: 380px;
+  overflow-y: scroll;
+  scrollbar-width: none;
+  -ms-overflow-style: none;
+
+  &::-webkit-scrollbar {
+    display: none;
+  }
+}
+.input-notes {
+  height: 120px;
+  width: 100%;
+  margin-top: -80px;
+  border-radius: 0 0 0 9px;
+  background: #e8e8e8;
+  padding-top: 10px;
+}
+form {
+  height: 90px;
+  width: 860px;
+  padding: 10px;
+  margin-left: 20px;
+  border-radius: 9px;
+  border: 1px solid #ccc;
+  background: #fff;
+}
+
+textarea {
+  border: none;
+  height: 90px;
+  width: 840px;
+  color: #9a9a9a;
+  font-family: Roboto;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  letter-spacing: 0.596px;
+  overflow-y: scroll;
+  scrollbar-width: none;
+  -ms-overflow-style: none;
+
+  &::-webkit-scrollbar {
+    display: none;
+  }
+}
+
+textarea:focus {
+  outline: none;
+}
+.enter {
+  margin-top: -29px;
+  text-align: end;
+}
+.defaultpage {
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+  align-items: center;
+  background: #f7ecdc;
+}
+
+.default-heading {
+  color: #000;
+  font-family: Roboto;
+  font-size: 30px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  letter-spacing: 1px;
+}
+.default-text {
+  width: 550px;
+}
+.default-text p {
+  color: #292929;
+  font-family: Roboto;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 32px;
+  letter-spacing: 0.44px;
+}
+.footer {
+  margin-top: 80px;
+}
+@media screen and (max-width: 500px) {
+  .navbar {
+    display: flex;
+    align-items: center;
+    height: 80px;
+    width: 360px;
+    position: fixed;
+    margin-top: -50px;
+    background: #e8e8e8;
+    padding-left: 15px;
+  }
+  .navbar .profile-logo {
+    width: 50px;
+    height: 50px;
+    font-size: 25px;
+  }
+  .cur-group {
+    color: #000;
+    font-family: Roboto;
+    font-size: 30px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    letter-spacing: 0.48px;
+  }
+  .notes-display {
+    margin-top: 50px;
+
+    background: #f7ecdc;
+    overflow-x: hidden;
+    overflow-y: scroll;
+    scrollbar-width: none;
+    -ms-overflow-style: none;
+    width: 360px;
+
+    height: 500px;
+    &::-webkit-scrollbar {
+      display: none;
+    }
+  }
+  .note-item {
+    margin-top: 50px;
+    display: flex;
+  }
+  .timestamp p {
+    color: #353535;
+    font-family: Roboto;
+    font-size: 15.5px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 97.688%;
+    letter-spacing: 0.373px;
+  }
+  .notestamp p {
+    max-width: 150px;
+    word-wrap: break-word;
+    color: #000;
+    font-family: Roboto;
+    font-size: 15px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 160.188%;
+    letter-spacing: 0.63px;
+  }
+
+  .input-notes {
+    width: 360px;
+
+    border-radius: 0 0 0 9px;
+    background: #e8e8e8;
+  }
+  form {
+    padding: 10px;
+    width: 300px;
+    border-radius: 9px;
+    border: 1px solid #ccc;
+    background: #fff;
+  }
+
+  textarea {
+    border: none;
+    height: 90px;
+    width: 300px;
+    color: #9a9a9a;
+    font-family: Roboto;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    letter-spacing: 0.596px;
+    overflow-y: scroll;
+    scrollbar-width: none;
+    -ms-overflow-style: none;
+
+    &::-webkit-scrollbar {
+      display: none;
+    }
+  }
+
+  textarea:focus {
+    outline: none;
+  }
+  .enter {
+    margin-top: -29px;
+    text-align: end;
+  }
+}
